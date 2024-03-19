@@ -1,7 +1,8 @@
 ## Java
 
 Ghi chú:
-```html
+
+```html 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,4 +19,14 @@ Ghi chú:
 </script>
 <script src="script.js"></script>
 </html>
-```
+``` html
+
+#String template
+với dấu `` ta có thể viết nhiều dòng và chèn biến vào chuỗi
+
+
+``` javascript
+let message = `Tôi là ${name} , năm nay tôi ${age} tuổi, tôi là ${isMale ? "nam" : "nữ"}`;```
+``` javascript
+
+
