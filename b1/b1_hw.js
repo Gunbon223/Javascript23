@@ -42,7 +42,7 @@ function b3(countryCode) {
 b3("JP");
 
 
-const b4 = (str) => {
+let b4 = (str) => {
     return str.length > 15 ? str.substring(0, 10) + "…" : str;
 };
 
