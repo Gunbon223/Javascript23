@@ -44,3 +44,26 @@ const para2 = document.getElementsByClassName('para-2')[0];
 const para2Clone = para2.cloneNode(true);
 para2.after(para2Clone);
 
+//Xóa thẻ có class=“para-1”
+
+const para1 = document.getElementsByClassName('para-1')[0];
+
+
+//lap cac the p de doi mau
+const paragraph1 = document.getElementsByClassName('para');
+Array.from(paragraph1).map((p, index) => {
+    p.innerText = `Paragra ${index}`;
+    p.style.color = 'red';
+}
+);
+
+//c2
+
+ for (let i = 0; i < paragraph1.length; i++) {
+
+    paragraph1[i].innerText = `Paragra ${i}`;
+    paragraph1[i].style.color = 'red';
+}
+
+
+
