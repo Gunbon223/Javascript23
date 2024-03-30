@@ -27,6 +27,7 @@ const questions = [
 ];
 
 let curQuestion = 0;
+let point = 0;
 
 const titleQuestion = document.querySelector('#question p');
 const choicesEl = document.querySelector('.choices');
@@ -47,26 +48,35 @@ const renderQuestion = (question) => {
     choicesEl.innerHTML = choiceHtml;
 }
 renderQuestion();
-
 const btnNext = document.getElementById('btn-next');
 btnNext.addEventListener('click', () => {
-    //check if user has selected an answer
+    if(curQuestion === questions.length - 1) {
+        btnNext.innerText = 'Kết thúc';
+    }
+    checkAnswer();
+    if(curQuestion === questions.length) {
+        alert('Bạn được: ' + point + '/'+ questions.length+' điểm' );
+        return;
+    }
+});
+
+function checkAnswer() {
+    if (curQuestion >= questions.length) {
+        return;
+    }
+
     const choices = document.querySelector('input[name="choices"]:checked');
     if (!choices) {
-        alert('Please select an answer');
+        alert('Chọn đáp án!');
         return;
     }
     const selectedAnswer = choices.value;
     const currentQuestion = questions[curQuestion];
     if (selectedAnswer === currentQuestion.answer) {
-        alert('Correct');
-    }
-    else {
-        alert('Incorrect');
+        point++;
     }
     curQuestion++;
-    console.log(curQuestion);
-    renderQuestion();
-});
-
-
+    if (curQuestion < questions.length) {
+        renderQuestion();
+    }
+}
