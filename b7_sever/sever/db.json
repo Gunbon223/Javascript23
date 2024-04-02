@@ -1,0 +1,96 @@
+{
+  "feedback": [
+    {
+      "id": 1,
+      "rating": 10,
+      "user_name": "Tony Stark",
+      "text": "You are the ironman of this world"
+    },
+    {
+      "id": 2,
+      "rating": 9,
+      "user_name": "Bruce Wayne",
+      "text": "You are the batman of this world"
+    },
+    {
+      "id": 3,
+      "rating": 8,
+      "user_name": "Peter Parker",
+      "text": "You are the spiderman of this world"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Tony Stark",
+      "age": 45,
+      "email": "test",
+      "phone": "1234567890"
+    },
+    {
+      "id": 2,
+      "name": "Bruce Wayne",
+      "age": 51,
+      "email": "test2",
+      "phone": "1234567666"
+    },
+    {
+      "id": 3,
+      "name": "Peter Parker",
+      "age": 26,
+      "email": "test3",
+      "phone": "1234567890"
+    },
+    {
+      "id": 4,
+      "name": "Clark Kent",
+      "age": 33,
+      "email": "test4",
+      "phone": "1231234132"
+    },
+    {
+      "name": "Ant Man",
+      "age": 41,
+      "email": "test2",
+      "phone": "5151255125",
+      "id": 7
+    }
+  ],
+  "todos": [
+    {
+      "id": 1,
+      "title": "Shopping",
+      "status": true
+    },
+    {
+      "id": 2,
+      "title": "Finish the project",
+      "status": false
+    },
+    {
+      "id": 3,
+      "title": "Craft the table",
+      "status": false
+    },
+    {
+      "id": 4,
+      "title": "Clean the room",
+      "status": true
+    },
+    {
+      "title": "asdasd",
+      "status": false,
+      "id": 5
+    },
+    {
+      "title": "www",
+      "status": false,
+      "id": 6
+    },
+    {
+      "title": "vwesd",
+      "status": false,
+      "id": 7
+    }
+  ]
+}
