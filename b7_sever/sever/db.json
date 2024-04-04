@@ -60,7 +60,7 @@
     {
       "id": 1,
       "title": "Shopping",
-      "status": true
+      "status": false
     },
     {
       "id": 2,
@@ -91,6 +91,21 @@
       "title": "vwesd",
       "status": false,
       "id": 7
+    },
+    {
+      "title": "qwe",
+      "status": false,
+      "id": 8
+    },
+    {
+      "title": "qweqwe",
+      "status": false,
+      "id": 9
+    },
+    {
+      "title": "qweqwe",
+      "status": false,
+      "id": 10
     }
   ]
 }

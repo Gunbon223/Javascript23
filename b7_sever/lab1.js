@@ -143,19 +143,20 @@ buttonFind.addEventListener('click', async () =>{
     }
     else if(title) {
         try {
-            const response = axios.get(`${api_url}?q=${title}`);
-            console.log(response.data.message);
+            const response = await axios.get(`${api_url}?q=${title}`);
+            const findItem = response.data
+            renderTodos(findItem);
             }
         catch (error) {
             console.log(error);
         }
-     
-        renderTodos(todos);    
     }
     else {
         return;
     }
 });
+
+
 const api_url = "http://localhost:6010/todos";
 const getAllTodos = async () => {
     try {
